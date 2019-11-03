@@ -332,7 +332,7 @@ public class MainActivity extends AppCompatActivity implements
 
     @Override
     public boolean onSupportNavigateUp() {
-        return NavigationUI.navigateUp(drawerLayout, Navigation.findNavController(this, R.id.nav_host_fragment));
+        return NavigationUI.navigateUp(Navigation.findNavController(this, R.id.nav_host_fragment), drawerLayout);
     }
 
     @Override
